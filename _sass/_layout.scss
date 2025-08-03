@@ -1,0 +1,268 @@
+/**
+ * Site wrapper
+ */
+.site-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/**
+ * Site header
+ */
+.site-header {
+  background-color: $background-color;
+  border-bottom: 1px solid $border-color;
+  position: sticky;
+  top: 0;
+  z-index: $z-index-header;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: $spacing-unit / 2 0;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.025em;
+  margin-bottom: 0;
+  color: $text-color;
+
+  &:hover {
+    text-decoration: none;
+    color: $brand-color;
+  }
+}
+
+.site-nav {
+  line-height: 1;
+
+  .nav-trigger {
+    display: none;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .page-link {
+    color: $text-color;
+    line-height: 1.5;
+    margin-left: $spacing-unit;
+    font-weight: 500;
+
+    &:hover {
+      color: $brand-color;
+      text-decoration: none;
+    }
+
+    // Gaps between nav items
+    &:not(:last-child) {
+      margin-right: 0;
+    }
+  }
+
+  .social-links {
+    display: inline-flex;
+    margin-left: $spacing-unit;
+    gap: $spacing-unit / 2;
+
+    a {
+      color: $grey-color;
+      font-size: 1.25rem;
+
+      &:hover {
+        color: $brand-color;
+        text-decoration: none;
+      }
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-tablet) {
+    position: absolute;
+    top: 9px;
+    right: $spacing-unit / 2;
+    background-color: $background-color;
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    text-align: right;
+
+    label[for="nav-trigger"] {
+      display: block;
+      float: right;
+      width: 36px;
+      height: 36px;
+      z-index: 2;
+      cursor: pointer;
+    }
+
+    .menu-icon {
+      display: block;
+      float: right;
+      width: 36px;
+      height: 26px;
+      line-height: 0;
+      padding-top: 10px;
+      text-align: center;
+
+      > span {
+        display: block;
+        width: 18px;
+        height: 2px;
+        border-radius: 1px;
+        background-color: $grey-color-dark;
+        margin: auto;
+        transition: all 0.3s ease;
+
+        &:not(:last-child) {
+          margin-bottom: 5px;
+        }
+      }
+    }
+
+    input ~ .trigger {
+      clear: both;
+      display: none;
+    }
+
+    input:checked ~ .trigger {
+      display: block;
+      padding-bottom: 5px;
+    }
+
+    .page-link {
+      display: block;
+      padding: 5px 10px;
+      margin-left: 20px;
+
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+    }
+
+    .social-links {
+      justify-content: center;
+      margin: 10px 0;
+    }
+  }
+}
+
+/**
+ * Page content
+ */
+.page-content {
+  flex: 1 0 auto;
+  padding: $spacing-unit 0;
+}
+
+/**
+ * Site footer
+ */
+.site-footer {
+  background-color: $grey-color-light;
+  border-top: 1px solid $border-color;
+  padding: $spacing-unit 0;
+  margin-top: auto;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: $spacing-unit;
+  margin-bottom: $spacing-unit;
+
+  @media screen and (max-width: $breakpoint-tablet) {
+    grid-template-columns: 1fr;
+    gap: $spacing-unit / 2;
+  }
+}
+
+.footer-col {
+  h4 {
+    color: $text-color;
+    margin-bottom: $spacing-unit / 3;
+    font-size: 1.125rem;
+  }
+
+  p {
+    color: $grey-color;
+    font-size: $small-font-size;
+    margin-bottom: $spacing-unit / 4;
+  }
+}
+
+.social-media-list {
+  list-style: none;
+  margin-left: 0;
+
+  li {
+    margin-bottom: $spacing-unit / 4;
+
+    a {
+      display: flex;
+      align-items: center;
+      color: $grey-color;
+      font-size: $small-font-size;
+
+      &:hover {
+        color: $brand-color;
+        text-decoration: none;
+      }
+
+      i {
+        margin-right: $spacing-unit / 4;
+        width: 16px;
+      }
+    }
+  }
+}
+
+.footer-nav {
+  list-style: none;
+  margin-left: 0;
+
+  li {
+    margin-bottom: $spacing-unit / 4;
+
+    a {
+      color: $grey-color;
+      font-size: $small-font-size;
+
+      &:hover {
+        color: $brand-color;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.footer-bottom {
+  border-top: 1px solid $border-color;
+  padding-top: $spacing-unit / 2;
+  text-align: center;
+
+  p {
+    color: $grey-color;
+    font-size: $small-font-size;
+    margin-bottom: $spacing-unit / 4;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  a {
+    color: $brand-color;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

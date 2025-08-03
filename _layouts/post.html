@@ -1,0 +1,94 @@
+---
+layout: default
+---
+
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <div class="post-meta">
+            <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                {{ page.date | date: "%B %d, %Y" }}
+            </time>
+            {%- if page.author -%}
+                <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                    <span class="p-author h-card" itemprop="name">{{ page.author }}</span>
+                </span>
+            {%- endif -%}
+            {%- if page.reading_time -%}
+                <span class="reading-time">{{ page.reading_time }} min read</span>
+            {%- endif -%}
+        </div>
+        
+        <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+        
+        {%- if page.tags.size > 0 -%}
+            <div class="post-tags">
+                {%- for tag in page.tags -%}
+                    <span class="tag">{{ tag }}</span>
+                {%- endfor -%}
+            </div>
+        {%- endif -%}
+        
+        {%- if page.featured_image -%}
+            <div class="post-featured-image">
+                <img src="{{ page.featured_image | relative_url }}" alt="{{ page.title }}">
+            </div>
+        {%- endif -%}
+    </header>
+    
+    <div class="post-content e-content" itemprop="articleBody">
+        {{ content }}
+    </div>
+    
+    <footer class="post-footer">
+        <div class="post-share">
+            <h4>Share this post</h4>
+            <div class="share-buttons">
+                <a href="https://twitter.com/intent/tweet?url={{ page.url | absolute_url | url_encode }}&text={{ page.title | url_encode }}" 
+                   target="_blank" rel="noopener" class="share-btn twitter">
+                    <i class="fab fa-twitter"></i> Twitter
+                </a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url | url_encode }}" 
+                   target="_blank" rel="noopener" class="share-btn facebook">
+                    <i class="fab fa-facebook"></i> Facebook
+                </a>
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | absolute_url | url_encode }}" 
+                   target="_blank" rel="noopener" class="share-btn linkedin">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
+        </div>
+        
+        {%- if page.author -%}
+            <div class="author-bio">
+                <div class="author-avatar">
+                    {%- if site.author.avatar -%}
+                        <img src="{{ site.author.avatar | relative_url }}" alt="{{ site.author.name }}">
+                    {%- else -%}
+                        <div class="avatar-placeholder">{{ site.author.name | slice: 0 }}</div>
+                    {%- endif -%}
+                </div>
+                <div class="author-info">
+                    <h4>{{ site.author.name }}</h4>
+                    {%- if site.author.bio -%}
+                        <p>{{ site.author.bio }}</p>
+                    {%- endif -%}
+                </div>
+            </div>
+        {%- endif -%}
+        
+        <nav class="post-navigation">
+            {%- if page.previous.url -%}
+                <a href="{{ page.previous.url | relative_url }}" class="nav-previous">
+                    <i class="fas fa-arrow-left"></i>
+                    <span>{{ page.previous.title | truncate: 30 }}</span>
+                </a>
+            {%- endif -%}
+            {%- if page.next.url -%}
+                <a href="{{ page.next.url | relative_url }}" class="nav-next">
+                    <span>{{ page.next.title | truncate: 30 }}</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            {%- endif -%}
+        </nav>
+    </footer>
+</article>

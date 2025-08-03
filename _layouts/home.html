@@ -1,0 +1,69 @@
+---
+layout: default
+---
+
+<div class="home">
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">{{ site.title }}</h1>
+            <p class="hero-description">{{ site.description }}</p>
+            {%- if site.author.bio -%}
+                <p class="hero-bio">{{ site.author.bio }}</p>
+            {%- endif -%}
+        </div>
+    </section>
+
+    {{ content }}
+
+    {%- if site.posts.size > 0 -%}
+    <section class="recent-posts">
+        <h2 class="section-title">Recent Posts</h2>
+        
+        <div class="posts-grid">
+            {%- assign posts = site.posts | slice: 0, 6 -%}
+            {%- for post in posts -%}
+                <article class="post-card">
+                    {%- if post.featured_image -%}
+                        <div class="post-image">
+                            <img src="{{ post.featured_image | relative_url }}" alt="{{ post.title }}">
+                        </div>
+                    {%- endif -%}
+                    
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <time datetime="{{ post.date | date_to_xmlschema }}">
+                                {{ post.date | date: "%B %d, %Y" }}
+                            </time>
+                            {%- if post.tags.size > 0 -%}
+                                <div class="post-tags">
+                                    {%- for tag in post.tags limit: 3 -%}
+                                        <span class="tag">{{ tag }}</span>
+                                    {%- endfor -%}
+                                </div>
+                            {%- endif -%}
+                        </div>
+                        
+                        <h3 class="post-title">
+                            <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+                        </h3>
+                        
+                        {%- if post.excerpt -%}
+                            <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+                        {%- endif -%}
+                        
+                        <a href="{{ post.url | relative_url }}" class="read-more">
+                            Read More <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+            {%- endfor -%}
+        </div>
+        
+        {%- if site.posts.size > 6 -%}
+            <div class="view-all">
+                <a href="{{ '/blog/' | relative_url }}" class="btn btn-primary">View All Posts</a>
+            </div>
+        {%- endif -%}
+    </section>
+    {%- endif -%}
+</div>

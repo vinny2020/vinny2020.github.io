@@ -1,3 +1,82 @@
 title: "Vinny's Blog"
-description: "A personal blog built with Jekyll and GitHub Pages."
+description: "A personal blog built with Jekyll and GitHub Pages - sharing thoughts on technology, programming, and life."
+url: "https://yourusername.github.io"
+baseurl: ""
+
+# Author information
+author:
+  name: "Vinny"
+  email: "your.email@example.com"
+  bio: "Software developer, tech enthusiast, and occasional blogger"
+  avatar: "/assets/images/avatar.jpg"
+
+# Social media links
+social:
+  github: yourusername
+  twitter: yourusername
+  linkedin: yourprofile
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+paginate: 5
+paginate_path: "/page:num/"
+
+# Theme and plugins
 theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
+
+# SEO settings
+lang: en_US
+timezone: America/New_York
+
+# Navigation
+navigation:
+  - title: Home
+    url: /
+  - title: About
+    url: /about/
+  - title: Blog
+    url: /blog/
+  - title: Contact
+    url: /contact/
+
+# Exclude files from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+
+# Include files
+include:
+  - _pages
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:name/
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Vinny"
+  - scope:
+      path: "_pages"
+      type: "pages"
+    values:
+      layout: "page"

@@ -1,0 +1,57 @@
+<footer class="site-footer">
+    <div class="wrapper">
+        <div class="footer-content">
+            <div class="footer-col footer-col-1">
+                <h4>{{ site.title }}</h4>
+                <p>{{ site.description }}</p>
+            </div>
+            
+            <div class="footer-col footer-col-2">
+                <h4>Connect</h4>
+                {%- if site.social -%}
+                    <ul class="social-media-list">
+                        {%- if site.social.github -%}
+                            <li>
+                                <a href="https://github.com/{{ site.social.github }}" target="_blank" rel="noopener">
+                                    <i class="fab fa-github"></i>
+                                    <span class="username">{{ site.social.github }}</span>
+                                </a>
+                            </li>
+                        {%- endif -%}
+                        {%- if site.social.twitter -%}
+                            <li>
+                                <a href="https://twitter.com/{{ site.social.twitter }}" target="_blank" rel="noopener">
+                                    <i class="fab fa-twitter"></i>
+                                    <span class="username">{{ site.social.twitter }}</span>
+                                </a>
+                            </li>
+                        {%- endif -%}
+                        {%- if site.social.linkedin -%}
+                            <li>
+                                <a href="https://linkedin.com/in/{{ site.social.linkedin }}" target="_blank" rel="noopener">
+                                    <i class="fab fa-linkedin"></i>
+                                    <span class="username">{{ site.social.linkedin }}</span>
+                                </a>
+                            </li>
+                        {%- endif -%}
+                    </ul>
+                {%- endif -%}
+            </div>
+            
+            <div class="footer-col footer-col-3">
+                <h4>Quick Links</h4>
+                <ul class="footer-nav">
+                    {%- for item in site.navigation -%}
+                        <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+                    {%- endfor -%}
+                    <li><a href="{{ '/feed.xml' | relative_url }}">RSS Feed</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name | default: site.title }}. All rights reserved.</p>
+            <p>Built with <a href="https://jekyllrb.com/" target="_blank" rel="noopener">Jekyll</a> and hosted on <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a>.</p>
+        </div>
+    </div>
+</footer>

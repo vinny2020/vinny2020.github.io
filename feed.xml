@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en_US"><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="https://yourusername.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://yourusername.github.io/" rel="alternate" type="text/html" hreflang="en_US" /><updated>2026-02-13T23:42:20-05:00</updated><id>https://yourusername.github.io/feed.xml</id><title type="html">Vinny’s Blog</title><subtitle>A personal blog built with Jekyll and GitHub Pages - sharing thoughts on technology, programming, and life.</subtitle><author><name>Vinny</name><email>your.email@example.com</email></author><entry><title type="html">Welcome to My Blog!</title><link href="https://yourusername.github.io/2024/01/15/welcome-to-my-blog/" rel="alternate" type="text/html" title="Welcome to My Blog!" /><published>2024-01-15T10:00:00-05:00</published><updated>2024-01-15T10:00:00-05:00</updated><id>https://yourusername.github.io/2024/01/15/welcome-to-my-blog</id><content type="html" xml:base="https://yourusername.github.io/2024/01/15/welcome-to-my-blog/">&lt;h1 id=&quot;welcome-to-my-blog-&quot;&gt;Welcome to My Blog! 🎉&lt;/h1&gt;
+
+&lt;p&gt;Hello and welcome to my personal blog! I’m excited to share this space with you where I’ll be documenting my journey as a software developer, sharing insights about technology, and occasionally reflecting on life lessons learned along the way.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-inspired-this-blog&quot;&gt;What Inspired This Blog?&lt;/h2&gt;
+
+&lt;p&gt;As a developer, I’ve always believed in the power of sharing knowledge. Throughout my career, I’ve benefited immensely from the generosity of other developers who took the time to write about their experiences, share tutorials, and explain complex concepts in simple terms.&lt;/p&gt;
+
+&lt;p&gt;This blog is my way of giving back to the community that has given me so much.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-you-can-expect&quot;&gt;What You Can Expect&lt;/h2&gt;
+
+&lt;h3 id=&quot;technical-content&quot;&gt;Technical Content&lt;/h3&gt;
+&lt;p&gt;I’ll be sharing:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Tutorials&lt;/strong&gt; on technologies I’m working with&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Code snippets&lt;/strong&gt; and solutions to problems I’ve solved&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Project walkthroughs&lt;/strong&gt; of things I’m building&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Book reviews&lt;/strong&gt; of technical books I’ve read&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;personal-insights&quot;&gt;Personal Insights&lt;/h3&gt;
+&lt;p&gt;Beyond the technical stuff, you’ll also find:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Thoughts on &lt;strong&gt;work-life balance&lt;/strong&gt; in tech&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Career advice&lt;/strong&gt; from my experiences&lt;/li&gt;
+  &lt;li&gt;Reflections on &lt;strong&gt;continuous learning&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Product recommendations&lt;/strong&gt; and tool reviews&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;the-tech-behind-this-blog&quot;&gt;The Tech Behind This Blog&lt;/h2&gt;
+
+&lt;p&gt;This blog is built with &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; and hosted on &lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt;. I chose this setup because:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Simplicity&lt;/strong&gt;: Writing in Markdown is a joy&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Version Control&lt;/strong&gt;: Everything is tracked in Git&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Free Hosting&lt;/strong&gt;: GitHub Pages makes it easy and cost-effective&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Customization&lt;/strong&gt;: Full control over design and functionality&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Here’s a quick code snippet showing how easy it is to get started with Jekyll:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Install Jekyll&lt;/span&gt;
+gem &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;bundler jekyll
+
+&lt;span class=&quot;c&quot;&gt;# Create a new site&lt;/span&gt;
+jekyll new my-blog
+
+&lt;span class=&quot;c&quot;&gt;# Navigate to the directory&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;my-blog
+
+&lt;span class=&quot;c&quot;&gt;# Serve the site locally&lt;/span&gt;
+bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;jekyll serve
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;lets-connect&quot;&gt;Let’s Connect!&lt;/h2&gt;
+
+&lt;p&gt;I’d love to hear from you! Whether you have questions, suggestions, or just want to say hello, feel free to reach out:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Drop me a line on &lt;a href=&quot;https://twitter.com/yourusername&quot;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Check out my projects on &lt;a href=&quot;https://github.com/yourusername&quot;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Connect with me on &lt;a href=&quot;https://linkedin.com/in/yourprofile&quot;&gt;LinkedIn&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Thank you for visiting, and I hope you find something valuable here. Happy reading! 📚&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;em&gt;What topics would you like me to cover in future posts? Let me know in the comments or reach out on social media!&lt;/em&gt;&lt;/p&gt;</content><author><name>Vinny</name></author><category term="blogging" /><category term="personal" /><category term="welcome" /><category term="introduction" /><category term="blogging" /><summary type="html">A warm welcome to my new Jekyll blog hosted on GitHub Pages. Let me share what you can expect to find here.</summary></entry></feed>

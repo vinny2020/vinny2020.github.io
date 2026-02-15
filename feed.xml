@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en_US"><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="https://yourusername.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://yourusername.github.io/" rel="alternate" type="text/html" hreflang="en_US" /><updated>2026-02-13T23:42:20-05:00</updated><id>https://yourusername.github.io/feed.xml</id><title type="html">Vinny’s Blog</title><subtitle>A personal blog built with Jekyll and GitHub Pages - sharing thoughts on technology, programming, and life.</subtitle><author><name>Vinny</name><email>your.email@example.com</email></author><entry><title type="html">Welcome to My Blog!</title><link href="https://yourusername.github.io/2024/01/15/welcome-to-my-blog/" rel="alternate" type="text/html" title="Welcome to My Blog!" /><published>2024-01-15T10:00:00-05:00</published><updated>2024-01-15T10:00:00-05:00</updated><id>https://yourusername.github.io/2024/01/15/welcome-to-my-blog</id><content type="html" xml:base="https://yourusername.github.io/2024/01/15/welcome-to-my-blog/">&lt;h1 id=&quot;welcome-to-my-blog-&quot;&gt;Welcome to My Blog! 🎉&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en_US"><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="https://vinny2020.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://vinny2020.github.io/" rel="alternate" type="text/html" hreflang="en_US" /><updated>2026-02-13T23:42:20-05:00</updated><id>https://vinny2020.github.io/feed.xml</id><title type="html">Vinny’s Blog</title><subtitle>A personal blog built with Jekyll and GitHub Pages - sharing thoughts on technology, programming, and life.</subtitle><author><name>Vinny</name><email>xaymaca@gmail.com</email></author><entry><title type="html">Welcome to My Blog!</title><link href="https://vinny2020.github.io/2024/01/15/welcome-to-my-blog/" rel="alternate" type="text/html" title="Welcome to My Blog!" /><published>2024-01-15T10:00:00-05:00</published><updated>2024-01-15T10:00:00-05:00</updated><id>https://vinny2020.github.io/2024/01/15/welcome-to-my-blog</id><content type="html" xml:base="https://vinny2020.github.io/2024/01/15/welcome-to-my-blog/">&lt;h1 id=&quot;welcome-to-my-blog-&quot;&gt;Welcome to My Blog! 🎉&lt;/h1&gt;
 
 &lt;p&gt;Hello and welcome to my personal blog! I’m excited to share this space with you where I’ll be documenting my journey as a software developer, sharing insights about technology, and occasionally reflecting on life lessons learned along the way.&lt;/p&gt;
 
@@ -59,9 +59,9 @@ bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;jekyll serve
 &lt;p&gt;I’d love to hear from you! Whether you have questions, suggestions, or just want to say hello, feel free to reach out:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Drop me a line on &lt;a href=&quot;https://twitter.com/yourusername&quot;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Check out my projects on &lt;a href=&quot;https://github.com/yourusername&quot;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Connect with me on &lt;a href=&quot;https://linkedin.com/in/yourprofile&quot;&gt;LinkedIn&lt;/a&gt;&lt;/li&gt;
+  
+  &lt;li&gt;Check out my projects on &lt;a href=&quot;https://github.com/vinny2020&quot;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Connect with me on &lt;a href=&quot;https://www.linkedin.com/in/vincentstoessel/&quot;&gt;LinkedIn&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Thank you for visiting, and I hope you find something valuable here. Happy reading! 📚&lt;/p&gt;

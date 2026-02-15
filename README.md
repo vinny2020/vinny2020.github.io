@@ -56,8 +56,8 @@ A modern, responsive Jekyll blog built for GitHub Pages. This blog features a cl
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/your-blog-repo.git
-   cd your-blog-repo
+   git clone https://github.com/vinny2020/vinny2020.github.io.git
+   cd vinny2020.github.io
    ```
 
 2. **Install dependencies**
@@ -80,18 +80,17 @@ A modern, responsive Jekyll blog built for GitHub Pages. This blog features a cl
    ```yaml
    title: "Your Blog Title"
    description: "Your blog description"
-   url: "https://yourusername.github.io"
+   url: "https://vinny2020.github.io"
    author:
      name: "Your Name"
-     email: "your.email@example.com"
+     email: "xaymaca@gmail.com"
    ```
 
 2. **Update social links**
    ```yaml
    social:
-     github: yourusername
-     twitter: yourusername
-     linkedin: yourprofile
+     github: vinny2020
+     linkedin: vincentstoessel
    ```
 
 3. **Customize colors and fonts**

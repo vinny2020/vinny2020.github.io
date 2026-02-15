@@ -1,6 +1,6 @@
 # Vinny's Blog
 
-A modern, responsive Jekyll blog built for GitHub Pages. This blog features a clean design, syntax highlighting, social sharing, and mobile-friendly navigation.
+A modern, responsive blog built for GitHub Pages. This blog features a clean design, syntax highlighting, social sharing, and mobile-friendly navigation.
 
 ## 🚀 Features
 
@@ -14,8 +14,7 @@ A modern, responsive Jekyll blog built for GitHub Pages. This blog features a cl
 
 ## 🛠️ Technologies Used
 
-- **Jekyll 4.x**: Static site generator
-- **Sass/SCSS**: For styling
+- **HTML/CSS/JavaScript**: For building the site
 - **GitHub Pages**: Hosting platform
 - **GitHub Actions**: Automated deployment
 - **Font Awesome**: Icons
@@ -24,33 +23,15 @@ A modern, responsive Jekyll blog built for GitHub Pages. This blog features a cl
 ## 📁 Project Structure
 
 ```
-├── _config.yml           # Jekyll configuration
-├── _layouts/             # Page layouts
-│   ├── default.html      # Base layout
-│   ├── home.html         # Homepage layout
-│   ├── post.html         # Blog post layout
-│   └── page.html         # Static page layout
-├── _includes/            # Reusable components
-│   ├── header.html       # Site header
-│   └── footer.html       # Site footer
-├── _sass/                # Sass partials
-│   ├── _variables.scss   # CSS variables
-│   ├── _base.scss        # Base styles
-│   ├── _layout.scss      # Layout styles
-│   ├── _components.scss  # Component styles
-│   └── _syntax-highlighting.scss # Code highlighting
-├── _posts/               # Blog posts
-├── _pages/               # Static pages
+├── index.html            # Homepage
+├── about/                # About page
+├── blog/                 # Blog page
+├── contact/              # Contact page
 ├── assets/               # Assets (CSS, JS, images)
 └── .github/workflows/    # GitHub Actions
 ```
 
 ## 🚀 Getting Started
-
-### Prerequisites
-
-- Ruby 2.7 or higher
-- Bundler gem
 
 ### Local Development
 
@@ -60,31 +41,13 @@ A modern, responsive Jekyll blog built for GitHub Pages. This blog features a cl
    cd vinny2020.github.io
    ```
 
-2. **Install dependencies**
-   ```bash
-   bundle install
-   ```
-
-3. **Run the development server**
-   ```bash
-   bundle exec jekyll serve
-   ```
-
-4. **Open your browser**
-   Navigate to `http://localhost:4000`
+2. **Open your browser**
+   Open `index.html` in your web browser.
 
 ### Customization
 
-1. **Update site configuration**
-   Edit `_config.yml` to customize your site settings:
-   ```yaml
-   title: "Your Blog Title"
-   description: "Your blog description"
-   url: "https://vinny2020.github.io"
-   author:
-     name: "Your Name"
-     email: "xaymaca@gmail.com"
-   ```
+1. **Update site content**
+   Edit the HTML files directly to customize your site content.
 
 2. **Update social links**
    ```yaml
@@ -94,26 +57,7 @@ A modern, responsive Jekyll blog built for GitHub Pages. This blog features a cl
    ```
 
 3. **Customize colors and fonts**
-   Edit variables in `_sass/_variables.scss`
-
-## 📝 Writing Posts
-
-Create new posts in the `_posts` directory with the naming convention:
-`YEAR-MONTH-DAY-title.md`
-
-Example front matter:
-```yaml
----
-layout: post
-title: "Your Post Title"
-date: 2024-01-15 10:00:00 -0500
-categories: [category1, category2]
-tags: [tag1, tag2, tag3]
-author: Your Name
-excerpt: "A brief description of your post"
-featured_image: "/assets/images/your-image.jpg" # Optional
----
-```
+   Edit variables in `assets/css/style.css` (or `_sass/_variables.scss` if using Sass)
 
 ## 🌐 Deployment
 
@@ -130,7 +74,6 @@ This blog is configured for automatic deployment to GitHub Pages using GitHub Ac
 
 1. Add a `CNAME` file to your repository root with your domain
 2. Configure your domain's DNS to point to GitHub Pages
-3. Update the `url` in `_config.yml`
 
 ## 📱 Responsive Design
 
@@ -164,8 +107,7 @@ This project is open source and available under the [MIT License](LICENSE).
 If you have any questions or need help with setup, feel free to:
 - Open an issue on GitHub
 - Reach out on social media
-- Check the [Jekyll documentation](https://jekyllrb.com/docs/)
 
 ---
 
-Built with ❤️ using Jekyll and GitHub Pages
+Built with ❤️ using HTML, CSS, JavaScript and GitHub Pages
